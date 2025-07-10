@@ -1,4 +1,6 @@
 import { hopeTheme } from 'vuepress-theme-hope';
+import navbar from './navbar.js';
+import sidebar from './sidebar.js';
 
 export default hopeTheme({
   darkmode: 'toggle',
@@ -7,6 +9,9 @@ export default hopeTheme({
     name: 'Mr.Wyix',
     url: 'https://wyixzh.github.io/',
   },
+
+  navbar,
+  sidebar,
 
   favicon: '/favicon.ico',
   logo: '/logo.svg',
@@ -50,6 +55,34 @@ export default hopeTheme({
           Telegram: 'https://t.me/Mister_Hope',
         },
       },
+    },
+  },
+
+  markdown: {
+    align: true,
+    codeTabs: true,
+    demo: true,
+    figure: true,
+    flowchart: true,
+    highlighter: {
+      type: 'shiki',
+      lineNumbers: 10,
+      langAlias: {
+        conf: 'ini',
+      },
+    },
+    imgLazyload: true,
+    imgMark: true,
+    imgSize: true,
+    footnote: true,
+    mermaid: true,
+    revealjs: true,
+    sub: true,
+    sup: true,
+    tabs: true,
+    vPre: true,
+    math: {
+      type: 'mathjax',
     },
   },
 

@@ -11,12 +11,18 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.23
         version: 2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2)
+      '@vuepress/plugin-revealjs':
+        specifier: 2.0.0-rc.112
+        version: 2.0.0-rc.112(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-slimsearch':
         specifier: 2.0.0-rc.112
         version: 2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@waline/client':
         specifier: ^3.5.7
         version: 3.6.0
+      flowchart.ts:
+        specifier: ^3.0.1
+        version: 3.0.1
       sass-embedded:
         specifier: ^1.89.2
         version: 1.89.2
@@ -28,7 +34,7 @@ importers:
         version: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.93
-        version: 2.0.0-rc.93(@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)))(@waline/client@3.6.0)(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
+        version: 2.0.0-rc.93(@vuepress/plugin-revealjs@2.0.0-rc.112(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)))(@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)))(@waline/client@3.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
 
 packages:
 
@@ -681,6 +687,12 @@ packages:
   '@types/node@24.0.12':
     resolution: {integrity: sha512-LtOrbvDf5ndC9Xi+4QZjVL0woFymF/xSTKZKPgrrl7H7XoeDvnD+E2IclKVDyaK9UM756W/3BXqSU+JEHopA9g==}
 
+  '@types/raphael@2.3.9':
+    resolution: {integrity: sha512-K1dZwoLNvEN+mvleFU/t2swG9Z4SE5Vub7dA5wDYojH0bVTQ8ZAP+lNsl91t1njdu/B+roSEL4QXC67I7Hpiag==}
+
+  '@types/reveal.js@5.2.0':
+    resolution: {integrity: sha512-IHO3Nc0YjI4CKQHeK/2U+6SinAJCC8/xiKCIDQnlFCiq02GMag+WrveIszll033zyv/mtXoCnWmYZITUngE2pA==}
+
   '@types/sax@1.2.7':
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
 
@@ -946,6 +958,11 @@ packages:
     hasBin: true
     peerDependencies:
       vuepress: 2.0.0-rc.23
+
+  '@vuepress/plugin-revealjs@2.0.0-rc.112':
+    resolution: {integrity: sha512-9gic9CaInjaOYffD37urVN40BQG5mcMrwmGV2AL90HyRBoHjnRsmPSoWd2l6fdKFSafoDtsSsLrXJRiAcYcKnQ==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.24
 
   '@vuepress/plugin-rtl@2.0.0-rc.109':
     resolution: {integrity: sha512-Bd4vASRPueiHa9vRGA0NzmrNiYEG+qo3stWSPFIwctpeObPBxjubHttL+aTf6IFAzNaPpgAedwLbH2pxoQsVcQ==}
@@ -1276,6 +1293,9 @@ packages:
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
+  eve-raphael@0.5.0:
+    resolution: {integrity: sha512-jrxnPsCGqng1UZuEp9DecX/AuSyAszATSjf4oEcRxvfxa1Oux4KkIPKBAAWWnpdwfARtr+Q0o9aPYWjsROD7ug==}
+
   extend-shallow@2.0.1:
     resolution: {integrity: sha512-zCnTtlxNoAiDc3gqY2aYAWFx7XWWiasuF2K8Me5WbN8otHKTUKBwjPtNpRs/rbUZm7KxWAaNj7P1a/p52GbVug==}
     engines: {node: '>=0.10.0'}
@@ -1308,6 +1328,10 @@ packages:
   find-up@4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
     engines: {node: '>=8'}
+
+  flowchart.ts@3.0.1:
+    resolution: {integrity: sha512-bBlP6IAe6A/Y9UXb27YhbGS39fTaGLHx1dyjNazIc0d6ntVGC2eIHP6siUQj9PMEX1M5vKXbTecpi+dn4Bhhjg==}
+    engines: {node: ^18.0.0 || >= 20}
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
@@ -1675,6 +1699,9 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  raphael@2.3.0:
+    resolution: {integrity: sha512-w2yIenZAQnp257XUWGni4bLMVxpUpcIl7qgxEgDIXtmSypYtlNxfXWpOBxs7LBTps5sDwhRnrToJrMUrivqNTQ==}
+
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
@@ -1718,6 +1745,10 @@ packages:
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+  reveal.js@5.2.1:
+    resolution: {integrity: sha512-r7//6mIM5p34hFiDMvYfXgyjXqGRta+/psd9YtytsgRlrpRzFv4RbH76TXd2qD+7ZPZEbpBDhdRhJaFgfQ7zNQ==}
+    engines: {node: '>=18.0.0'}
 
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
@@ -2704,6 +2735,10 @@ snapshots:
     dependencies:
       undici-types: 7.8.0
 
+  '@types/raphael@2.3.9': {}
+
+  '@types/reveal.js@5.2.0': {}
+
   '@types/sax@1.2.7':
     dependencies:
       '@types/node': 17.0.45
@@ -3030,7 +3065,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@vuepress/plugin-markdown-chart@2.0.0-rc.109(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))':
+  '@vuepress/plugin-markdown-chart@2.0.0-rc.109(flowchart.ts@3.0.1)(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))':
     dependencies:
       '@mdit/plugin-container': 0.22.1(markdown-it@14.1.0)
       '@mdit/plugin-plantuml': 0.22.2(markdown-it@14.1.0)
@@ -3038,6 +3073,8 @@ snapshots:
       '@vueuse/core': 13.5.0(vue@3.5.17)
       vue: 3.5.17
       vuepress: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)
+    optionalDependencies:
+      flowchart.ts: 3.0.1
     transitivePeerDependencies:
       - markdown-it
       - typescript
@@ -3188,6 +3225,20 @@ snapshots:
       vue: 3.5.17
       vuepress: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)
     transitivePeerDependencies:
+      - typescript
+
+  '@vuepress/plugin-revealjs@2.0.0-rc.112(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))':
+    dependencies:
+      '@mdit/plugin-uml': 0.22.1(markdown-it@14.1.0)
+      '@types/markdown-it': 14.1.2
+      '@types/reveal.js': 5.2.0
+      '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
+      '@vueuse/core': 13.5.0(vue@3.5.17)
+      reveal.js: 5.2.1
+      vue: 3.5.17
+      vuepress: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)
+    transitivePeerDependencies:
+      - markdown-it
       - typescript
 
   '@vuepress/plugin-rtl@2.0.0-rc.109(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))':
@@ -3567,6 +3618,8 @@ snapshots:
 
   estree-walker@2.0.2: {}
 
+  eve-raphael@0.5.0: {}
+
   extend-shallow@2.0.1:
     dependencies:
       is-extendable: 0.1.1
@@ -3599,6 +3652,12 @@ snapshots:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
+
+  flowchart.ts@3.0.1:
+    dependencies:
+      '@types/raphael': 2.3.9
+      raphael: 2.3.0
+      tslib: 2.8.1
 
   fraction.js@4.3.7: {}
 
@@ -3974,6 +4033,10 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  raphael@2.3.0:
+    dependencies:
+      eve-raphael: 0.5.0
+
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
@@ -4019,6 +4082,8 @@ snapshots:
       signal-exit: 4.1.0
 
   reusify@1.1.0: {}
+
+  reveal.js@5.2.1: {}
 
   rfdc@1.4.1: {}
 
@@ -4378,7 +4443,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.93(@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)))(@waline/client@3.6.0)(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)):
+  vuepress-theme-hope@2.0.0-rc.93(@vuepress/plugin-revealjs@2.0.0-rc.112(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)))(@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)))(@waline/client@3.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17)):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.109(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.107(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
@@ -4391,7 +4456,7 @@ snapshots:
       '@vuepress/plugin-git': 2.0.0-rc.109(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-icon': 2.0.0-rc.109(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-links-check': 2.0.0-rc.109(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
-      '@vuepress/plugin-markdown-chart': 2.0.0-rc.109(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
+      '@vuepress/plugin-markdown-chart': 2.0.0-rc.109(flowchart.ts@3.0.1)(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-markdown-ext': 2.0.0-rc.109(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-markdown-hint': 2.0.0-rc.109(markdown-it@14.1.0)(vue@3.5.17)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-markdown-image': 2.0.0-rc.109(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
@@ -4421,6 +4486,7 @@ snapshots:
       vuepress-plugin-md-enhance: 2.0.0-rc.93(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       vuepress-shared: 2.0.0-rc.90(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
     optionalDependencies:
+      '@vuepress/plugin-revealjs': 2.0.0-rc.112(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-slimsearch': 2.0.0-rc.112(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@24.0.12)(sass-embedded@1.89.2))(vue@3.5.17))
       sass-embedded: 1.89.2
     transitivePeerDependencies:
