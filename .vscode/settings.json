@@ -1,0 +1,13 @@
+{
+  // 将 Prettier 设置为默认格式化工具
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 保存文件时自动格式化
+  "editor.formatOnSave": true,
+  // 仅对支持的文件类型使用 Prettier 格式化
+  "[javascript][typescript][json][jsonc][markdown][scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 禁用其他格式化工具，避免冲突
+  "eslint.format.enable": false,
+  "vetur.format.enable": false
+}
