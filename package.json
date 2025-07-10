@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/jsconfig",
-  "name": "docsystem",
-  "description": "想象力比知识更重要，因为知识是有限的，而想象力概括着世界的一切",
+  "name": "wyixzh.github.io",
+  "description": "个人博客简介",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
